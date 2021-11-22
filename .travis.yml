@@ -1,4 +1,5 @@
 language: node_js
+
 node_js:
   "12"
 env:
@@ -7,5 +8,6 @@ env:
 before_script:
   - psql -c 'create database taxi_trips;' -U postgres
   - psql -U postgres -d taxi_trips -a -f sql/tables.sql
+  
 services:
   - postgresql

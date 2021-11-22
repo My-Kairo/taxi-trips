@@ -25,4 +25,4 @@ create table region(
     name text not null,
     route_id int,
     foreign key (route_id) reference route(id)
-)
+);
